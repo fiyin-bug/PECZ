@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@body {
+    --font-display: "Delius", "cursive"; 
+  }
+/* In src/index.css or src/App.css */
+body {
+    @apply font-sans;
+  }
+  
