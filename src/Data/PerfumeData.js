@@ -5,7 +5,7 @@ import EternalDusk2 from '../assets/Images/EternalDusk2.JPG';
 import NomadOud from '../assets/Images/NomadOud.jpg';
 import WildElegance from '../assets/Images/WildElegance.jpg';
 import Forever2 from '../assets/Images/Forever2.JPG';
-import Sandalwood from '../assets/Images/Sandalwood.jpg';
+import Sandalwood from '../assets/Images/Sandalwood.JPG';
 
 export const PerfumeData = [
   {
