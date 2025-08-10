@@ -6,6 +6,7 @@ import PerfumesPage from "./Pages/PerfumesPage";
 import AboutUs from "./Pages/About";
 import ContactUs from "./Pages/Contact";
 import CartPage from "./Pages/CartPage";
+import Oils from "./Pages/Oils";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -72,6 +73,7 @@ const App = () => {
       )}
       {currentPage === "about" && <AboutUs />}
       {currentPage === "contact" && <ContactUs />}
+      {currentPage === "oils" && <Oils addToCart={addToCart} />}
       {currentPage === "cart" && <CartPage cart={cart} setCart={setCart} />}
       <Footer setCurrentPage={setCurrentPage} />
     </div>

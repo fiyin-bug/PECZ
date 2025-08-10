@@ -1,95 +1,130 @@
-import fifteen from '../assets/Images/fifteen.jpeg';
-import thirteen from '../assets/Images/thirteen.jpeg';
-import four from '../assets/Images/four.jpeg';
-import EternalDusk2 from '../assets/Images/EternalDusk2.JPG';
-import NomadOud from '../assets/Images/NomadOud.jpg';
-import WildElegance from '../assets/Images/WildElegance.jpg';
-import Forever2 from '../assets/Images/Forever2.JPG';
-import Sandalwood from '../assets/Images/Sandalwood.JPG';
+
+import ZestyAllure from "../assets/Images/ZestyAllure.jpg";
+import Golden from "../assets/Images/Golden.jpg";
+
+import EternalDusk from "../assets/Images/EternalDusk.png";
+import EternalDusk2 from "../assets/Images/EternalDusk2.JPG";
+import NomadOud from "../assets/Images/NomadOud.jpg";
+import WildElegance from "../assets/Images/WildElegance.jpg";
+import Forever from "../assets/Images/Forever.jpg";
+import Forever2 from "../assets/Images/Forever2.JPG";
+import ForeverInLove from "../assets/Images/ForeverInLove.jpg";
+import Sandalwood from "../assets/Images/Sandalwood.JPG";
+import safron from "../assets/Images/safron.jpg";
+import oudmajesty from "../assets/Images/oudmajesty.jpg";
 
 export const PerfumeData = [
   {
     id: 1,
     name: "Wild Elegance",
     description: "A captivating blend of woody bergamot and spice",
-    price: "₦192,000",
-    category: "floral",
-    image: fifteen
+    price: "₦254,000",
+    category: "warmspicy woody bergamot",
+    image: [WildElegance]
   },
   {
     id: 2,
     name: "Eternal Dusk",
-    description: "Warm amber notes with hints of vanilla and musk",
-    price: "₦152,000",
-    category: "oriental",
-    image: four
+    description: "Warm amber notes with hints of vanilla and rose",
+    price: "₦320,000",
+    category: "woody amber cardamom",
+    image: [EternalDusk2, EternalDusk],
   },
   {
     id: 3,
     name: "Forever In Love",
-    description: "Fresh flowery scent with grapefruit undertones",
-    price: "₦136,000",
-    category: "fresh",
-    image: Forever2
+    description: "Elegant blend of iris,tonka bean and vanilla",
+    price: "₦250,000",
+    category: "Iris tonka bean vanilla",
+    image: [Forever2, Forever, ForeverInLove],
   },
   {
     id: 4,
-    name: "Golden Allure",
-    description: "Rich woody fragrance with cedar and bergamot",
-    price: "₦176,000",
-    category: "woody",
-    image: thirteen
+    name: "Golden Allure For Women",
+    description: "Bold and glamorous fragrance designed for women who want to make a statement",
+    price: "₦210,000",
+    category: "floral amber grapefruit",
+    image: [Golden],
   },
   {
     id: 5,
-    name: "Nomad Oud",
-    description: "Vibrant citrus blend with floral heart notes",
-    price: "₦120,000",
-    category: "citrus",
-    image: NomadOud
+    name: "Nomade Oud",
+    description: "Juicy raspberry, warm amber and rich oud",
+    price: "₦650,000",
+    category: "oud raspberry amber",
+    image: [NomadOud],
   },
   {
     id: 6,
-    name: "Sandalwood",
-    description: "Sensual musk with soft powdery undertones",
+    name: "Zesty Allure",
+    description: "Sensual woody  with warmspicy with grapefruit ",
     price: "₦208,000",
-    category: "musky",
-    image: Sandalwood
+    category: "warmspicy woody grapefruit",
+    image: [ZestyAllure],
   },
   {
     id: 7,
-    name: "Eternal Dusk2",
-    description: "Fresh flowery scent with grapefruit undertones",
-    price: "₦136,000",
-    category: "fresh",
-    image: EternalDusk2
-  }
+    name: "Urban Excess For Men",
+    description: "Fresh Patchoulli scent with amber and vanilla undertones",
+    price: "₦100,000",
+    category: "patchoulli",
+    image: [ Golden],
+  },
 ];
-
+export const PerfumeOil = [
+  {
+    id: 1,
+    name: "Safron Rose",
+    price: "₦20,000",
+    image: [safron]
+  },
+  {
+    id: 2,
+    name: "Oud Majesty",
+    price: "₦15,000",
+    
+    image: [oudmajesty],
+  },
+  {
+    id: 3,
+    name: "Sandalwood",
+  
+    price: "₦15,000",
+    category: "Iris tonka bean vanilla",
+    image: [Sandalwood],
+  },
+];
 export const filterCategories = [
   "floral",
   "woody",
-  "citrus",
-  "musky",
-  "oriental",
-  "fresh",
-  "unisex"
+  "bergamot",
+  "amber",
+  "grapefruit",
+  "warmspicy",
+  "rose",
+  "vanilla",
+  "cardamom",
+  "oud",
+  "raspberry",
+  "Iris",
+  "tonka bean",
+  "patchoulli",
 ];
 
 export const testimonials = [
   {
     quote:
-      "The most exquisite fragrance I've ever owned. It's become my signature scent.",
-    name: "Sarah Johnson"
+      "Classic Charm is the most exquisite fragrance I've ever owned. It's become my signature scent.",
+    name: "Sayo Johnson"
   },
   {
     quote:
       "Exceptional quality and longevity. I receive compliments everywhere I go.",
-    name: "Michael Chen"
+    name: "Michael Ade"
   },
   {
     quote:
       "Pure luxury in a bottle. The craftsmanship is absolutely remarkable.",
-    name: "Emma Williams"
+    name: "Enny Williams"
   }
 ];

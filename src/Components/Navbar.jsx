@@ -8,6 +8,7 @@ const Navbar = ({ currentPage, setCurrentPage, cartCount }) => {
   const navLinks = [
     { page: "home", text: "Home" },
     { page: "perfumes", text: "Perfumes" },
+    { page: "oils", text: "Oils" },
     { page: "about", text: "About Us" },
     { page: "contact", text: "Contact Us" },
   ];
@@ -89,9 +90,9 @@ const Navbar = ({ currentPage, setCurrentPage, cartCount }) => {
               currentPage === "cart" ? "text-yellow-600" : ""
             }`}
           >
-            Cart
+            <i className="fas fa-shopping-cart text-xl"></i>
             {cartCount > 0 && (
-              <span className="absolute top-0 right-0 bg-yellow-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="absolute top-0 right-8 bg-yellow-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                 {cartCount}
               </span>
             )}

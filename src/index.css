@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import "tailwindcss";
 @body {
     --font-display: "Delius", "cursive"; 
   }
@@ -7,4 +7,3 @@
 body {
     @apply font-sans;
   }
-  

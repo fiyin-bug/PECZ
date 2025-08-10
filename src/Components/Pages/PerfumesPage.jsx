@@ -1,32 +1,69 @@
-// components/pages/PerfumesPage.jsx
-import React, { useState } from 'react';
-import perfumesData from '../../Data/perfumes';
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { PerfumeData } from "../../Data/PerfumeData";
+import PerfumeCard from "../PerfumeCard";
+import { Pagination, Navigation } from "swiper/modules";
 
 const PerfumesPage = () => {
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
 
-  const filteredPerfumes = perfumesData.filter(p =>
-    p.scent.toLowerCase().includes(filter.toLowerCase())
+  const filteredPerfumes = PerfumeData.filter((p) =>
+    p.category.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
-    <section className="p-8 max-w-5xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Our Perfumes</h1>
-      <input
-        type="text"
-        placeholder="Filter by scent (e.g., floral, woody, citrus)"
-        value={filter}
-        onChange={(e) => setFilter(e.target.value)}
-        className="mb-6 w-full p-2 border rounded"
-      />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredPerfumes.map((perfume) => (
-          <div key={perfume.id} className="border p-4 rounded shadow-sm">
-            <h2 className="text-xl font-semibold">{perfume.name}</h2>
-            <p className="text-gray-700">{perfume.description}</p>
-            <p className="text-sm mt-1 italic">Scent: {perfume.scent}</p>
-          </div>
-        ))}
+    <section className="py-12 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
+          Our Exquisite Perfumes
+        </h1>
+        <p className="text-center text-gray-600 mb-8">
+          Discover a world of captivating fragrances, each crafted with passion
+          and precision.
+        </p>
+        <div className="mb-8 max-w-md mx-auto">
+          <input
+            type="text"
+            placeholder="Filter by scent (e.g., floral, woody, citrus)"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+        >
+          {filteredPerfumes.map((perfume) => (
+            <SwiperSlide key={perfume.id}>
+              <PerfumeCard perfume={perfume} showPrice={true} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
