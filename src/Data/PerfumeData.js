@@ -14,6 +14,7 @@ import ForeverInLove from "../assets/Images/ForeverInLove.jpg";
 import Sandalwood from "../assets/Images/Sandalwood.JPG";
 import safron from "../assets/Images/safron.jpg";
 import oudmajesty from "../assets/Images/oudmajesty.jpg";
+import middle from "../assets/Images/middle.jpg";
 
 export const PerfumeData = [
   {
@@ -97,11 +98,19 @@ export const PerfumeOil = [
   },
   {
     id: 3,
-    name: "Sandalwood",
+    name: "Citrus Bloom",
   
     price: "₦15,000",
     category: "Iris tonka bean vanilla",
     image: [Sandalwood],
+  },
+  {
+    id: 4,
+    name: "Sandalwood",
+  
+    price: "₦15,000",
+    category: "Iris tonka bean vanilla",
+    image: [middle],
   },
 ];
 export const filterCategories = [
