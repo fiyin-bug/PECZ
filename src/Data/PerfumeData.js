@@ -15,6 +15,7 @@ import Sandalwood from "../assets/Images/Sandalwood.JPG";
 import safron from "../assets/Images/safron.jpg";
 import oudmajesty from "../assets/Images/oudmajesty.jpg";
 import middle from "../assets/Images/middle.jpg";
+import middle2 from "../assets/Images/middle2.jpg";
 
 export const PerfumeData = [
   {
@@ -110,7 +111,7 @@ export const PerfumeOil = [
   
     price: "₦15,000",
     category: "Iris tonka bean vanilla",
-    image: [middle],
+    image: [middle,middle2],
   },
 ];
 export const filterCategories = [
