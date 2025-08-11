@@ -1,7 +1,9 @@
 
 import ZestyAllure from "../assets/Images/ZestyAllure.jpg";
 import Golden from "../assets/Images/Golden.jpg";
-
+import ClassicCharm from "../assets/Images/ClassicCharm.jpg";
+import ClassicCharm2 from "../assets/Images/ClassicCharm.jpg";
+import ClassicCharm3 from "../assets/Images/ClassicCharm.jpg";
 import EternalDusk from "../assets/Images/EternalDusk.png";
 import EternalDusk2 from "../assets/Images/EternalDusk2.JPG";
 import NomadOud from "../assets/Images/NomadOud.jpg";
@@ -26,7 +28,7 @@ export const PerfumeData = [
     id: 2,
     name: "Eternal Dusk",
     description: "Warm amber notes with hints of vanilla and rose",
-    price: "₦320,000",
+    price: "₦300,000",
     category: "woody amber cardamom",
     image: [EternalDusk2, EternalDusk],
   },
@@ -58,7 +60,7 @@ export const PerfumeData = [
     id: 6,
     name: "Zesty Allure",
     description: "Sensual woody  with warmspicy with grapefruit ",
-    price: "₦208,000",
+    price: "₦200,000",
     category: "warmspicy woody grapefruit",
     image: [ZestyAllure],
   },
@@ -69,6 +71,14 @@ export const PerfumeData = [
     price: "₦100,000",
     category: "patchoulli",
     image: [ Golden],
+  },
+  {
+    id: 8,
+    name: "Classic Charm",
+    description: "Fresh Rose scent with amber and vanilla undertones",
+    price: "₦193,000",
+    category: "amber rose vanilla",
+    image: [ ClassicCharm, ClassicCharm2, ClassicCharm3],
   },
 ];
 export const PerfumeOil = [
