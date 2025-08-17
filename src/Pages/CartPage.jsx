@@ -53,7 +53,7 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // WhatsApp business number (replace with your actual number)
-  const businessWhatsAppNumber = "+2348164504707"; // Replace with your business number
+  const businessWhatsAppNumber = "+2349159171441"; // Replace with your business number
   const whatsAppUrl = `https://wa.me/${businessWhatsAppNumber}?text=${generateWhatsAppMessage()}`;
 
   return (
