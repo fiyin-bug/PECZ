@@ -8,7 +8,7 @@ const Footer = ({ setCurrentPage }) => {
           <div>
             <h3 className="text-xl font-serif mb-4">Peczys Cologne</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Crafting exceptional fragrances that capture the essence of luxury and sophistication since 2001.
+              Crafting exceptional fragrances that capture the essence of luxury and sophistication since January 2025.
             </p>
           </div>
           <div>
